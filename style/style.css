@@ -1,0 +1,533 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	width: 100%;
+	background-image: url(../images/bg-top.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: rgb(242, 242, 242);
+}
+
+li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: #FFF;
+}
+
+.container{
+	margin: auto;
+	width: 780px;
+}
+
+.menu-container{
+	margin: auto;
+	width: 800px;
+}
+
+.menubar{
+	padding: 0;
+	display: flex;
+	height: 50px;
+	align-items: center;
+}
+
+
+.menubar li{
+	padding: 0 12px;
+	font-size: 13px;
+}
+
+.menubar li:first-child{
+	margin-left: -12px;
+}
+
+.menubar li:nth-child(4){
+	border-right: 1px solid #FFF;
+}
+
+.menubar li:nth-child(5){
+	margin-left: 160px;
+}
+
+.menubar li + li{
+	border-left: 1px solid #FFF;
+}
+
+.menubar a:hover{
+	color: rgb(255, 103, 9);
+}
+
+#content{
+	margin-top: 350px;
+}
+
+.buttons{
+	background-color: rgb(17, 33, 65);
+	height: 207px;
+	position: relative;
+}
+
+.decor img{
+	position: absolute;
+	top: 0;
+	left: -73px;
+	width: 100px;
+}
+
+.download-btn{
+	background-image: url(../images/btn_taigame.jpg);
+	width: 187px;
+	margin-top: 3px;
+	margin-left: 3px;
+	min-height: 100px;
+	background-size: 190px;
+	position: absolute;
+}
+
+.download-btn a{
+	width: 187px;
+	height: 99px;
+	position: absolute;
+}
+
+.download-btn a:hover{
+	cursor: pointer;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.signin-btn{
+	background-image: url(../images/buttons-left.png);
+	background-position: 0px -2px;
+	background-size: 382px;
+	position: absolute;
+	top: 105px;
+	left: 1px;
+	width: 187px;
+	height: 48px;
+	margin-left: 3px;
+	z-index: 1;
+}
+
+.signin-btn:hover{
+	background-position: 188px -2px;
+	cursor: pointer;
+}
+
+.signin-btn a,
+.recharge-card a{
+	width: 187px;
+	height: 48px;
+	position: absolute;
+}
+
+.recharge-card{
+	background-image: url(../images/buttons-left.png);
+	background-position: 0px 48px;
+	background-size: 382px;
+	position: absolute;
+	top: 154px;
+	left: 1px;
+	width: 187px;
+	height: 48px;
+	margin-left: 3px;
+	z-index: 1;
+}
+
+.recharge-card:hover{
+	background-position: 188px 48px;
+	cursor: pointer;
+}
+
+.slider img{
+	margin-top: 3px;
+	width: 393px;
+	height: 199px;
+	position: absolute;
+	top: 0;
+	left: 196px;
+}
+
+.btn-right-1,
+.btn-right-2,
+.btn-right-3,
+.btn-right-4{
+	background-image: url(../images/buttons-right.png);
+	background-size: 200px;
+}
+
+.btn-right-1 a,
+.btn-right-2 a,
+.btn-right-3 a,
+.btn-right-4 a{
+	width: 87px;
+	height: 82px;
+	position: absolute;
+	bottom: 0;
+}
+
+.btn-right-1 a:hover,
+.btn-right-2 a:hover,
+.btn-right-3 a:hover,
+.btn-right-4 a:hover{
+	cursor: pointer;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn-right-1{
+	background-position: 0px -6px;
+	width: 87px;
+	height: 83px;
+	position: absolute;
+	margin-top: 3px;
+	right: 97px;
+	top: 0;
+}
+
+.btn-right-2{
+	background-position: -93px 0px;
+	width: 107px;
+	height: 88px;
+	position: absolute;
+	margin-top: 3px;
+	right: -16px;
+	top: -6px;
+}
+
+.btn-right-3{
+	background-position: 0px -93px;
+	width: 87px;
+	height: 83px;
+	position: absolute;
+	margin-top: 3px;
+	right: 97px;
+	top: 87px;
+}
+
+.btn-right-4{
+	background-position: -93px -93px;
+	width: 87px;
+	height: 83px;
+	position: absolute;
+	margin-top: 3px;
+	right: 4px;
+	top: 87px;
+}
+
+.hotline img{
+	position: absolute;
+	bottom: 4px;
+	right: 0;
+	width: 186px;
+}
+
+.giftcode{
+	margin-top: 8px;
+	position: relative;
+}
+
+.gift{
+	position: absolute;
+	width: 589px;
+	height: 66px;
+}
+
+.gift-item-1,
+.gift-item-2,
+.gift-item-3{
+	background-image: url(../images/cuuamlenh-vip-giftcode.png);
+	background-size: 589px 66px;
+	width: 193px;
+	height: 66px;
+	position: absolute;
+}
+
+.gift-item-1 a,
+.gift-item-2 a,
+.gift-item-3 a{
+	width: 193px;
+	height: 66px;
+	position: absolute;
+}
+
+.gift-item-1 a:hover,
+.gift-item-2 a:hover,
+.gift-item-3 a:hover{
+	cursor: pointer;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.gift-item-1{
+
+}
+
+.gift-item-2{
+	left: 197px;
+	background-position: -197px 0;
+}
+
+.gift-item-3{
+	left: 396px;
+	background-position: 193px 0;
+}
+
+.tutorial{
+	width: 188px;
+	height: 231px;
+	position: absolute;
+	right: 0;
+}
+
+.tutorial-item-1,
+.tutorial-item-2,
+.tutorial-item-3,
+.tutorial-item-4,
+.tutorial-item-5{
+	background-image: url(../images/links-right.png);
+	background-size: 194px 250px;
+	width: 188px;
+	height: 43px;
+	position: absolute;
+}
+
+.tutorial-item-1 a,
+.tutorial-item-2 a,
+.tutorial-item-3 a,
+.tutorial-item-4 a,
+.tutorial-item-5 a{
+	width: 188px;
+	height: 43px;
+	position: absolute;
+}
+
+.tutorial-item-1 a:hover,
+.tutorial-item-2 a:hover,
+.tutorial-item-3 a:hover,
+.tutorial-item-4 a:hover,
+.tutorial-item-5 a:hover{
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.tutorial-item-1{
+	background-position: -3px -2px;
+}
+
+.tutorial-item-2{
+	top: 49px;
+	background-position: -3px -55px;
+}
+
+.tutorial-item-3{
+	top: 97px;
+	background-position: -3px -108px;
+}
+
+.tutorial-item-4{
+	top: 144px;
+	background-position: -3px -155px;
+}
+
+.tutorial-item-5{
+	top: 191px;
+	background-position: -3px -202px;
+}
+
+.inform-section{
+	width: 589px;
+	min-height: 100px;
+	margin-top: 78px;
+}
+
+.inform-header{
+	position: relative;
+}
+
+.inform-header a{
+	font-size: 12px;
+	color: rgb(199, 168, 108);
+}
+
+.inform-header a:hover{
+	color: #FFF;
+}
+
+.inform-header a:nth-child(2),
+.inform-header a:nth-child(3),
+.inform-header a:nth-child(4),
+.inform-header a:nth-child(5),
+.inform-header a:nth-child(6),
+.inform-header a:last-child{
+	position: absolute;
+	top: 35%;
+}
+
+.inform-header a:nth-child(2){
+	left: 3%;
+}
+
+
+.inform-header a:nth-child(3){
+	left: 14%;
+}
+
+.inform-header a:nth-child(4){
+	left: 28%;
+}
+
+.inform-header a:nth-child(5){
+	left: 39%;
+}
+
+.inform-header a:nth-child(6){
+	left: 53%;
+}
+
+.inform-header a:last-child{
+	left: 65%;
+}
+
+.inform-header img{
+	width: 100%;
+}
+
+.inform-content{
+	border: 4px solid rgb(31, 50, 82);
+	border-top: none;
+	margin-top: -4px;
+}
+
+.news-item{
+	display: flex;
+	width: 90%;
+}
+
+.news-item:hover{
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+.logo{
+	border: 4px solid rgb(182, 155, 116);
+	margin-left: 12px;
+	margin-top: 12px;
+	font-size: 0;
+}
+
+.logo img{
+	width: 120px;
+}
+
+.news-wrapper{
+	margin-left: 16px;
+	margin-top: 12px;
+}
+
+.news-title{
+	color: rgb(183, 15, 11);
+	padding-left: 12px;
+	font-weight: bolder;
+	border-left: 4px solid rgb(183, 15, 11);
+	font-size: 16px;
+}
+
+.news-time{
+	color: rgb(140, 140, 140);
+	font-size: 10px;
+	font-style: italic;
+	margin-top: 8px;
+}
+
+.news-des{
+	color: rgb(105, 105, 105);
+	margin-top: 8px;
+	font-size: 12px;
+}
+
+.btn-bottom-inform{
+	display: flex;
+	justify-content: flex-end;
+	margin: 24px;
+}
+
+.btn-bottom-inform button{
+	padding: 12px 8px;
+	color: rgba(191, 191, 191, 0.4);
+	background-color: rgb(17, 33, 65);
+	border: 3px solid rgb(191, 191, 191);
+}
+
+.btn-bottom-inform a{
+	font-family: Times new roman;
+	padding: 12px 8px;
+}
+
+.btn-bottom-inform button:hover{
+	cursor: pointer;
+	opacity: 0.8;
+	color: rgba(191, 191, 191, 1);: 
+}
+
+.more-btn{
+	margin-left: 16px;
+}
+
+#footer{
+	background-image: url(../images/bg-bottom.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 193px;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+#footer a{
+	color: #000;
+	margin: auto;
+}
+
+#footer .container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#footer div{
+	font-size: 12px;
+	margin-top: 4px;
+}
+
+.support{
+	margin-top: 100px !important;
+}
+
+.support a{
+	padding: 0 12px;
+}
+
+.support a:hover{
+	color: rgb(255, 103, 9) !important;
+}
+
+.support a + a{
+	border-left: 1px solid #000;
+}
+
+.logo-company{
+	position: absolute;
+	top: 43%;
+	left: 367px;
+}
