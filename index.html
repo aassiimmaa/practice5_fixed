@@ -36,7 +36,9 @@
 					<a href="#"></a>
 				</div>
 				<div class="slider">
-					<img src="./images/slider-01.gif" alt="">
+					<img class="slide-item" src="./images/slider-01.gif" alt="">
+					<img class="slide-item" src="./images/slider-02.gif" alt="">
+					<img class="slide-item" src="./images/slide-03.jpg" alt="">
 				</div>
 				<div class="btn-right-1">
 					<a href="#"></a>
@@ -184,5 +186,23 @@
 			<img src="./images/gosu-logo.png" alt="">
 		</div>
 	</div>
+
+	<script>
+		var index = 0;
+		slideShow();
+
+		function slideShow() {
+  			var x = document.getElementsByClassName("slide-item");
+  			for (var i = 0; i < x.length; i++){
+  			  x[i].style.display = "none";  
+  			}
+  			index++;
+  			if (index > x.length){
+  				index = 1;
+  			}    
+  			x[index-1].style.display = "block";  
+ 			setTimeout(slideShow, 2000);    
+		}
+	</script>
 </body>
 </html>
